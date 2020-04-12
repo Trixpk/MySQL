@@ -1,4 +1,17 @@
 # MySQL
+$host = 'localhost';
+$login = 'login';
+$pass = 'pass';
+$dbName = 'db_name';
+
+// Подключаемся к базе
+$connect = mysqli_connect($host, $login, $pass, $dbName);
+
+// Проверяем подключение
+if(mysqli_connect_errno()) {
+  echo mysqli_connect_error();
+}
+
 Базовые SQL команды
 
 // Создание таблицы
